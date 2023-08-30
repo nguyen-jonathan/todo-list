@@ -28,16 +28,16 @@ export default function New() {
           className="border border-slate-300 bg-transparent rounded px0-2 py-1 outline-none focus-within:border-slate-100"
         />
         <div className="flex gap-1 justify-end">
-          <Link
-            href=".."
-            className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none">
-            Cancel{' '}
-          </Link>
           <button
             type="submit"
             className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none">
             Create
           </button>
+          <Link
+            href=".."
+            className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none">
+            Cancel{' '}
+          </Link>
         </div>
       </form>
     </>
