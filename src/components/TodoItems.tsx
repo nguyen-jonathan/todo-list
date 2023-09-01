@@ -11,7 +11,7 @@ export function TodoItem({id, title, complete, toggleTodo}: TodoItemProps) {
   return (
     <li className="flex gap-1 items-center">
       <input
-        id="{id}"
+        id="{id"
         type="checkbox"
         className="cursor-pointer peer"
         defaultChecked={complete}

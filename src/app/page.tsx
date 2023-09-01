@@ -14,7 +14,14 @@ async function toggleTodo(id: string, complete: boolean) {
   //no redirects
 }
 
+// async function deleteAllTodos() {
+//   'use server';
+//   const todos = await prisma.todo.deleteMany();
+//   console.log(todos);
+// }
+
 export default async function Home() {
+  // await prisma.todo.deleteMany();
   const todos = await prisma.todo.findMany();
   // await prisma.todo.create({data: {title: 'test', complete: false}});
   return (
@@ -26,9 +33,7 @@ export default async function Home() {
           New
         </Link>
         <h1 className="text-2xl">Todos</h1>
-        <button
-          type="submit"
-          className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none">
+        <button className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none">
           Delete
         </button>
       </header>
